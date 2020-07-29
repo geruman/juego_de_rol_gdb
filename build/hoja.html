@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es" >
+
+    <head>
+        <meta charset="utf8"/>
+        <link rel="stylesheet" type="text/css" href="js/augmented.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap" rel="stylesheet">
+        <style>
+body{font-family: 'Exo 2', sans-serif;}
+div.full_page{
+    display: inline-block;
+    margin: 10px;
+    --aug-border: 5px;
+    --aug-inset: 5px;
+    padding: 10px; /* mind the gap */
+    text-align: center;
+    --aug-border-bg: green;
+    --aug-inset-bg: lightgreen;
+}
+
+        label textarea{vertical-align:middle;height:3em}
+        .max_width{width:90%;padding:1em}
+        .max_height{height:90%;padding:1em}
+        .full_page h4{color:red; font-weight:bold}
+        .full_page h1{color:red}
+        .section span input{width:3em}
+        .identidad span input{width:15em}
+        .section{
+            margin:10px;
+            padding:10px;
+            --aug-border: 5px;
+            --aug-inset: 5px;
+            --aug-border: 1px;
+            --aug-border-bg: darkred;
+            --aug-inset-bg:firebrick;
+            color:lightgreen;
+            display:flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+            justify-content:space-between;
+            align-items:center;
+            padding:1em;
+
+                
+        }
+
+        div.demo1 {
+            --aug-border: 8px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="full_page" augmented-ui="tl-clip br-clip exe" id="hoja_completa">
+            <h1>Hoja de personaje</h1>
+                <h4>Identidad</h4>
+            <div class="section identidad" augmented-ui="tl-clip br-clip exe" id="datos">
+                <span><label for="nombre">Nombre</label><input type="text" id="nombre"></input></span>
+                <span><label for="edad">Edad</label><input type="text" id="edad"></input></span>
+                <span><label for="trabajo">Trabajo</label><input type="text" id="trabajo"></input></span>
+            <div ><div><label for="descripcion">Descripción</div><textarea id="descripcion"></textarea></label></div>
+            </div>
+                <h4>Estadisticas</h4>
+            <div id="stats" augmented-ui="tl-clip br-clip exe" class="section">
+                <span><label for="inteligencia">Inteligencia</label><input id="inteligencia" type="text"></input></span>
+                <span><label for="sabiduria">Sabiduria</label><input id="sabiduria" type="text"></input></span>
+                <span><label for="agilidad">Agilidad</label><input id="agilidad" type="text"></input></span>
+                <span><label for="fisico">Físico</label><input id="fisico" type="text"></input></span>
+                <span><label for="fuerza">Fuerza</label><input id="fuerza" type="text"></input></span>
+            </div>
+                <h4>Habilidades</h4>
+            <div id="skills" augmented-ui="tl-clip br-clip exe" class="section">
+                <span ><label for="ciencias">Ciencias Sociales</label>
+                    <input id="ciencias1" type="checkbox"></input>
+                    <input id="ciencias2" type="checkbox"></input>
+                    <input id="ciencias3" type="checkbox"></input>
+                </span>
+                <span ><label for="ciencias">Ciencias Naturales</label>
+                    <input id="ciencias1" type="checkbox"></input>
+                    <input id="ciencias2" type="checkbox"></input>
+                    <input id="ciencias3" type="checkbox"></input>
+                </span>
+                <span ><label for="ciencias">Ciencias Arcanas</label>
+                    <input id="ciencias1" type="checkbox"></input>
+                    <input id="ciencias2" type="checkbox"></input>
+                    <input id="ciencias3" type="checkbox"></input>
+                </span>
+                <span ><label for="ciencias">Tecnología</label>
+                    <input id="ciencias1" type="checkbox"></input>
+                    <input id="ciencias2" type="checkbox"></input>
+                    <input id="ciencias3" type="checkbox"></input>
+                </span>
+                <span ><label for="ciencias">Arte</label>
+                    <input id="ciencias1" type="checkbox"></input>
+                    <input id="ciencias2" type="checkbox"></input>
+                    <input id="ciencias3" type="checkbox"></input>
+                </span>
+            </div>
+                <h4>Salud</h4>
+            <div id="salud" augmented-ui="tl-clip br-clip exe" class="section">
+                <span><label for="magullado">Magullado</label><input  id="magullado" name="salud" type="radio" readonly></input></span>
+                <span><label for="maltrecho">Maltrecho [ -1 ]</label><input  id="maltrecho" name="salud" type="radio"></input></span>
+                <span><label for="herido">Herido [ -3 ]</label><input  id="herido" name="salud" type="radio"></input></span>
+                <span><label for="malherido">Malherido [ -5 ]</label><input  id="malherido" name="salud" type="radio"></input></span>
+                <span><label for="moribundo">Moribundo [ - 8 ]</label><input id="moribundo" name="salud" type="radio"></input></span>
+                <span><label for="muerto">Muerto [ -&infin; ]</label><input id="muerto" name="salud" type="radio"></input></span>
+                <span><label for="incapacitado">Incapacitado</label><input id="incapacitado" name="incapacitado" type="checkbox"></input></span>
+            </div>
+            <div id="aventuras_pasadas" augmented-ui="tl-clip br-clip exe" class="section">
+                <span class="max_width"><div><label for="participo_en_aventuras">Aventuras pasadas</label></div><textarea id="participo_en_aventuras" class="max_width max_height"></textarea></span>
+            </div>
+        </div>
+    </body>
+</html>

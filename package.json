@@ -1,0 +1,31 @@
+{
+  "name": "retropunk-rpg",
+  "version": "1.0.0",
+  "description": "This is a tabletop rpg for the 21 century all online",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geruman.github.io.git"
+  },
+  "keywords": [
+    "rpg",
+    "cyberpunk",
+    "role",
+    "playing",
+    "tabletop",
+    "retro",
+    "punk",
+    "cassette"
+  ],
+  "author": "Germán D. Bernhardt",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "augmented-ui": "^1.1.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
